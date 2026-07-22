@@ -1,5 +1,5 @@
-const API_BASE = "/api/v1";
-
+const API_BASE =
+  import.meta.env.VITE_API_URL || "https://northstarai-backend-1.onrender.com/api/v1";
 function getAccessToken(): string | null {
   return localStorage.getItem("ns_access_token");
 }
